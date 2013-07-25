@@ -56,13 +56,42 @@
 			height: 21px;
 			text-indent: 6px;
 		}
-		
+		#myModal {    
+		    width: 70%;
+		    margin-left: -30%;
+		    left: 45%;
+		}
 	</style>
 
   </head>
   <body>
 
 <div class="page-content">
+	<div id="myModal" data-backdrop="static" data-keyboard="false" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-body">
+	  		<div class="login">
+		        <div class="login-screen">
+		         <h3>Log-in to resume taking the exam.</h3>
+		          <div class="login-form">
+		            <div class="control-group">
+		              <input type="text" class="login-field" value="" placeholder="Enter your username" id="login-name" />
+		              <label class="login-field-icon fui-user" for="login-name"></label>
+		            </div>
+
+		            <div class="control-group">
+		              <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" />
+		              <label class="login-field-icon fui-lock" for="login-pass"></label>
+		            </div>
+
+		            <a class="btn btn-inverse btn-large btn-block" href="home.php">Login</a>
+		            <a class="login-link" href="#">Forgot your password?</a>
+		          </div>
+		        </div>
+		      </div>
+		  </div>
+	</div>
+	
+
 	<div class="span8">
 		<div class="row-fluid">
 			<div class="span12 content">
@@ -172,7 +201,7 @@
 				  <div class="form-actions">  
 					<button type="submit" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
 					<button type="reset" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
-					<button class="btn btn-danger"><b>Finish</b>  <i class="fui-arrow-right"></i></button>  
+					<a href="#myModal" role="button" data-toggle="modal" class="btn btn-danger"><b>Lock</b><i class="fui-lock"></i></a> 
 				  </div>   
 				</fieldset>
 			</form> 
