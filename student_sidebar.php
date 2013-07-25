@@ -3,29 +3,23 @@
 	 <div class="sidebar">
 			<ul>
 				<li <?php if(isset($active_nav) && $active_nav == 'DASHBOARD') echo 'class="active"'?>>
-					<a href="home.php">
+					<a href="student_home.php">
 						<div class="sidebar-icon fui-list"></div>
 						<div class="sidebar-content">DASHBOARD</div>
 					</a>
 				</li>
 
 				<li <?php if(isset($active_nav) && $active_nav == 'CLASSES') echo 'class="active"'?>>
-					<a href="class.php">
+					<a href="student_class.php">
 						<div class="sidebar-icon fui-calendar-solid"></div>
 						<div class="sidebar-content">CLASSES</div>
 					</a>
 				</li>
 
 				<li <?php if(isset($active_nav) && $active_nav == 'EXAMS') echo 'class="active"'?>>
-					<a href="addExam.php">
+					<a href="student_viewEssay.php">
 						<div class="sidebar-icon fui-eye"></div>
-						<div class="sidebar-content">EXAMS</div>
-					</a>
-				</li>
-				<li <?php if(isset($active_nav) && $active_nav == 'REPORTS') echo 'class="active"'?>>
-					<a href="addExam.php">
-						<div class="sidebar-icon fui-cmd"></div>
-						<div class="sidebar-content">REPORTS</div>
+						<div class="sidebar-content">ESSAYS</div>
 					</a>
 				</li>
 			</ul>

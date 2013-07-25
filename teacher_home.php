@@ -8,7 +8,7 @@
 			<div class="row-fluid">
 				<div class="span12 content">
 					<p class="pull-right">
-						<a href="addExam.php" class="btn btn-large btn-primary"><i class="icon-white icon-plus"></i> New Exam</a>
+						<a href="teacher_addExam.php" class="btn btn-large btn-primary"><i class="icon-white icon-plus"></i> New Exam</a>
 					</p>
 					<img class="title-icons" src="images/icons/Pensils@2x.png">
 					<h3>On-going Exams</h3>
@@ -84,37 +84,37 @@
 								<td>I - Amethyst</td>
 								<td>My Summer Vacation</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 							 <tr>
 								<td>I - Opal</td>
 								<td>My Summer Vacation</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Constantine</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Zeus</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Wisdom</td>
 								<td>Ancient Civilization</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Hope</td>
 								<td>Ancient Civilization</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="checkManually.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
 							</tr>
 						</tbody>
 					</table>
