@@ -1,7 +1,8 @@
-<?php $active_nav = 'EXAMS'?>
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
-		
+<?php
+	$active_nav = 'EXAMS';
+	include 'teacher_header.php'; 
+	include 'teacher_sidebar.php';
+?>		
 			<div class="page-content">
 				<div class="span8">
 					<div class="row-fluid">

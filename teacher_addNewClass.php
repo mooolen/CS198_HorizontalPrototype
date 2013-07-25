@@ -1,7 +1,8 @@
-<?php $active_nav = 'CLASSES'?>
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
-
+<?php
+	$active_nav = 'CLASSES';
+	include 'teacher_header.php'; 
+	include 'teacher_sidebar.php';
+?>	
 <style>
 #myModal {    
     width: 70%;

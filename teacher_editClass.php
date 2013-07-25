@@ -1,5 +1,8 @@
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php
+	$active_nav = 'CLASSES';
+	include 'teacher_header.php'; 
+	include 'teacher_sidebar.php';
+?>		
 <body>
 <div class="page-content">
 	<div class="span8">
@@ -26,7 +29,15 @@
 							<div class="controls">
 								<div id="add_more_div"></div>
 								<div>
-									<input class="span3" name="add_more[]" type="text" id="part0" placeholder="Required" value="Sia, Efren Ver M." required />				
+									<br>
+									<ul class="unstyled">
+										<li>Cruz, Juana O.</li>
+										<li>De Leon, Juana R.</li>
+										<li>Mapalo, Danica C.</li>
+										<li>Sia, Efren Ver M.</li>
+										<li>Tolentino, Pedro K.</li>
+									</ul>
+									<input class="span3" name="add_more[]" type="text" id="part0" placeholder="Required" value="" required />		
 									<button type="button" data-toggle="tooltip" data-placement="right" title="Add Student" onclick="add_more_text_box('add_more_div','add_more[]',child());" class="btn btn-primary mtm" ><i class="fui-plus"></i></button>	
 								</div>
 							</div>

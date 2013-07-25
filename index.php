@@ -17,19 +17,30 @@
         <div class="login-screen">
          <h3>TECS: Test Essay Checking Software</h3>
           <div class="login-form">
-            <div class="control-group">
-              <input type="text" class="login-field" value="" placeholder="Enter your username" id="login-name" />
-              <label class="login-field-icon fui-user" for="login-name"></label>
-            </div>
+            <?php
+            if(isset($_GET['login_error']) && $_GET['login_error'] == 1) {
+                echo '
+                  <div class="alert alert-error">
+                    <strong>Invalid username and password combination!</strong>
+                  </div>
+                ';
+              }
+            ?>
+            <form action="login-confirm.php" method="post">
+              <div class="control-group">
+                <input type="text" class="login-field" value="" placeholder="Enter your username" name="username" required/>
+                <label class="login-field-icon fui-user"></label>
+              </div>
 
-            <div class="control-group">
-              <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" />
-              <label class="login-field-icon fui-lock" for="login-pass"></label>
-            </div>
+              <div class="control-group">
+                <input type="password" class="login-field" value="" placeholder="Password" name="password" required/>
+                <label class="login-field-icon fui-lock"></label>
+              </div>
 
-            <a class="btn btn-inverse btn-large btn-block" href="home.php">Login</a>
-            <a class="login-link" href="#">Forgot your password?</a>
-            <a class="login-link" href="#">Not yet a member? Sign up here.</a>
+              <button class="btn btn-inverse btn-large btn-block" type="submit">Login</button>
+              <a class="login-link" href="#">Forgot your password?</a>
+              <a class="login-link" href="#">Not yet a member? Sign up here.</a>
+            </form>
           </div>
         </div>
       </div>

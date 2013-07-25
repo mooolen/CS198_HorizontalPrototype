@@ -29,14 +29,13 @@
 							<a href="#">Help</a>
 						</li>
 						<li class="active dropdown">
-							<a href="#" class="dropdown-toggle">
-								<img class="avatar" src="images/avatar-elena.png" /> Elena Dimagiba
+							<a href="#" class="dropdown-toggle"><img class="avatar" src="images/avatar-elena.png" /> Elena Dimagiba
 								<b class="caret"></b>
 							</a>
 							<ul>
 								<li><a href="profile.php">My Profile</a></li>
 								<li><a href="#">My Account</a></li>
-								<li><a href="#">Logout</a></li>
+								<li><a href="index.php">Logout</a></li>
 							</ul>
 						</li>
 					</ul>
