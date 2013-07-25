@@ -12,15 +12,26 @@
     <link href="bootstrap/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-    <script src="bootstrap/js/jquery-1.7.2.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
 	<script src="bootstrap/js/jquery.hotkeys.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/prettify.js"></script>
-	
+	<link rel="stylesheet" href="css/jquery.countdown.css">	
     <link href="css/flat-ui.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap-wysiwyg.js"></script>
+    <script src="bootstrap/js/ckeditor.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	
 
     <style>
+		.noDays { 		
+			width: 240px; 
+			height: 45px; 			
+			position: absolute;
+			top: 5em;
+			right: 1.3em;
+			z-index: 9999;
+			}
 		#editor {
 			max-height: 250px;
 			height: 250px;
@@ -36,6 +47,16 @@
 			overflow: scroll;
 			outline: none;
 		}
+
+		#wcount{
+		  	color: #34495e;
+		  	font-family: "Lato", sans-serif;
+		  	font-size: 14px;
+			padding: 8px 5px;
+			height: 21px;
+			text-indent: 6px;
+		}
+		
 	</style>
 
   </head>
@@ -45,6 +66,8 @@
 	<div class="span8">
 		<div class="row-fluid">
 			<div class="span12 content">
+
+					  <div class="noDays btn btn-danger row-fluid"></div>
 			<form class="form-horizontal">  
 				<fieldset>	
 					<img class="title-icons" src="images/icons/Pensils@2x.png">
@@ -93,7 +116,7 @@
 					 <!--wysiwyg editor-->
 					<div class="control-group"> 
 						<div id="alerts"></div>
-						<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+						<div class="btn-toolbar" data-role="editor-toolbar" data-target=".editor">
 						  <div class="btn-group">
 							<a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
 							  <ul class="dropdown-menu">
@@ -133,19 +156,23 @@
 							<a class="btn btn-warning" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
 							<a class="btn btn-warning" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
 						  </div>
+						  <div class="btn-group">
+						  	<input class = 'wcount span3' type='text' id='word_count' disabled />
+						  </div>
 						</div>
 
-						<div id="editor">
-							Write your essay here.
+						<div id="editor" class="wysiwyg">
 						</div>
+
+
   
 				  </div>
                   
 				  
 				  <div class="form-actions">  
-					<button type="submit" class="btn btn-primary"><b>Save</b> <i class="fui-check"></i></button> 
-					<button type="reset" class="btn btn-warning"><b>Reset</b> <i class="fui-play"></i></button> 
-					<button class="btn btn-danger"><b>Cancel</b>  <i class="fui-cross"></i></button>  
+					<button type="submit" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
+					<button type="reset" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
+					<button class="btn btn-danger"><b>Finish</b>  <i class="fui-arrow-right"></i></button>  
 				  </div>   
 				</fieldset>
 			</form> 
@@ -156,6 +183,15 @@
 
 </body>
 
+<script type="text/javascript">
+$(function () {
+	//var austDay = new Date();
+	//austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+	//$('#noDays').countdown({until: austDay});
+	var liftoffTime = 7200;
+	$('.noDays').countdown({until: liftoffTime, format: 'HMS'});
+});
+</script>
 
 <script>
   $(function(){
@@ -198,6 +234,34 @@
   });
 </script>
 
+<script>
+var output = document.getElementById('word_count');
+var count =0;
+
+function wordcount(inputwords) {
+	console.log(('#editor').value);
+	inputwords = ('#editor').value;
+	var essay = inputwords.split(/\s/);
+	count = essay.length;
+	alert(count);
+};
+	output.setAttribute('value', 'Word Count: '+count);
+
+</script>
+
+<script>
+	function count(){
+	  var txtVal = $('#editor').text();
+	  var words = txtVal.trim().replace(/\s+/gi, ' ').split(' ').length;
+	  var chars = txtVal.length;
+	  if(chars===0){words=0;}
+	  output.setAttribute('value', 'Word Count: '+words);
+	}
+
+	$('#editor').on('keyup propertychange', function(){ 
+	    count();
+	});
+</script>
 <div id="fb-root"></div>
 
 </html>

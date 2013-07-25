@@ -17,9 +17,15 @@
 				</li>
 
 				<li <?php if(isset($active_nav) && $active_nav == 'EXAMS') echo 'class="active"'?>>
-					<a href="exams.php">
+					<a href="addExam.php">
 						<div class="sidebar-icon fui-eye"></div>
 						<div class="sidebar-content">EXAMS</div>
+					</a>
+				</li>
+				<li <?php if(isset($active_nav) && $active_nav == 'REPORTS') echo 'class="active"'?>>
+					<a href="addExam.php">
+						<div class="sidebar-icon fui-cmd"></div>
+						<div class="sidebar-content">REPORTS</div>
 					</a>
 				</li>
 			</ul>

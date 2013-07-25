@@ -5,62 +5,127 @@
 		<div class="span8">
 			<div class="row-fluid">
 				<div class="span12 content">
-					<img class="title-icons" src="../images/icons/Pensils@2x.png">
+					<p class="pull-right">
+						<a href="addExam.php" class="btn btn-large btn-primary"><i class="icon-white icon-plus"></i> New Exam</a>
+					</p>
+					<img class="title-icons" src="images/icons/Pensils@2x.png">
 					<h3>On-going Exams</h3>
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th width="15%">Subject</th>
-								<th width="20%">Teacher</th>
-								<th width="31%">Essay Topic</th>
-								<th width="12%">Start</th>
-								<th width="12%">Deadline</th>
-								<th width="15%"></th>
+								<th width="20%">Class</th>
+								<th width="30%">Essay</th>
+								<th width="15%">Start</th>
+								<th width="15%">Deadline</th>
+								<th width="10%"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>English</td>
-								<td>Ms. Elena Dimagiba</td>
+								<td>I - Amethyst</td>
 								<td>My Summer Vacation</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">Take Exam</a></center></td>
+								<td><center><a href="#">View</a></center></td>
+							</tr>
+							 <tr>
+								<td>I - Opal</td>
+								<td>My Summer Vacation</td>
+								<td>July 15, 2013</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="#">View</a></center></td>
+							</tr>
+							<tr>
+								<td>II - Constantine</td>
+								<td>Status of Philippine Economy</td>
+								<td>July 15, 2013</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="#">View</a></center></td>
+							</tr>
+							<tr>
+								<td>II - Zeus</td>
+								<td>Status of Philippine Economy</td>
+								<td>July 15, 2013</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="#">View</a></center></td>
+							</tr>
+							<tr>
+								<td>III - Wisdom</td>
+								<td>Ancient Civilization</td>
+								<td>July 15, 2013</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="#">View</a></center></td>
+							</tr>
+							<tr>
+								<td>III - Hope</td>
+								<td>Ancient Civilization</td>
+								<td>July 15, 2013</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="#">View</a></center></td>
 							</tr>
 						</tbody>
 					</table>
 					<hr>
-					<img class="title-icons" src="../images/icons/Pocket@2x.png">
-					<h3>Recently Finished</h3>
+					<img class="title-icons" src="images/icons/Retina-Ready@2x.png">
+					<h3>Review Essay Score Results</h3>
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th width="15%">Subject</th>
-								<th width="20%">Teacher</th>
-								<th width="31%">Essay Topic</th>
-								<th width="12%">Date Ended</th>
-								<th width="7%">Grade</th>
-								<th width="15%"></th>
+								<th width="20%">Class</th>
+								<th width="30%">Essay</th>
+								<th width="15%">Date Ended</th>
+								<th width="10%"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>English</td>
-								<td>Ms. Elena Dimagiba</td>
-								<td>My Class Expectations</td>
+								<td>I - Amethyst</td>
+								<td>My Summer Vacation</td>
 								<td>July 19, 2013</td>
-								<td><strong><center>92</strong></center></td>
-								<td><center><a href="#">More Information</a></center></td>
+								<td><center><a href="checkManually.php">View</a></center></td>
+							</tr>
+							 <tr>
+								<td>I - Opal</td>
+								<td>My Summer Vacation</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="checkManually.php">View</a></center></td>
+							</tr>
+							<tr>
+								<td>II - Constantine</td>
+								<td>Status of Philippine Economy</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="checkManually.php">View</a></center></td>
+							</tr>
+							<tr>
+								<td>II - Zeus</td>
+								<td>Status of Philippine Economy</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="checkManually.php">View</a></center></td>
+							</tr>
+							<tr>
+								<td>III - Wisdom</td>
+								<td>Ancient Civilization</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="checkManually.php">View</a></center></td>
+							</tr>
+							<tr>
+								<td>III - Hope</td>
+								<td>Ancient Civilization</td>
+								<td>July 19, 2013</td>
+								<td><center><a href="checkManually.php">View</a></center></td>
 							</tr>
 						</tbody>
 					</table>
-					<a href="#" class="pull-right">View All</a>
 					<hr>
-					<img class="title-icons" src="../images/icons/Watches@2x.png">
+					<img class="title-icons" src="images/icons/Watches@2x.png">
 					<h3 class="title">Recent Activity</h3>
 					<ul>
-						<li><small>[10:23 am] Submitted "My Class Expectation" essay test for English I. </li>
-						<li><small>[10:23 am] Enrolled in English I class under Ms. Elena Dimagiba </li>
+						<li><small>[10:23 am] Started "My Summer Vacation" essay test for I-Amethyst. </li>
+						<li><small>[10:23 am] Started "My Summer Vacation" essay test for I-Opal. </li>
+						<li><small>[10:23 am] Started "Status of Philippine Economy" essay test for II-Constantine. </li>
+						<li><small>[10:23 am] Started "Status of Philippine Economy" essay test for II-Zeus. </li>
+						<li><small>[10:23 am] Started "Ancient Civilization" essay test for III-Wisdom. </li>
+						<li><small>[10:23 am] Started "Ancient Civilization" essay test for III-Hope. </li>
 					</ul>
 				</div>
 			</div>

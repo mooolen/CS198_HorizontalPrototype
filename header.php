@@ -30,7 +30,7 @@
 						</li>
 						<li class="active dropdown">
 							<a href="#" class="dropdown-toggle">
-								<img class="avatar" src="images/avatar-john.png" /> John Beer
+								<img class="avatar" src="images/avatar-elena.png" /> Elena Dimagiba
 								<b class="caret"></b>
 							</a>
 							<ul>

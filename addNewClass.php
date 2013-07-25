@@ -1,8 +1,47 @@
 <?php $active_nav = 'CLASSES'?>
 <?php include 'header.php'; ?>
 <?php include 'sidebar.php'; ?>
-<script src="bootstrap/js/jquery-1.7.2.min.js"></script>
+
+<style>
+#myModal {    
+    width: 70%;
+    margin-left: -30%;
+    left: 45%;
+}
+</style>
 <div class="page-content">
+	<div id="myModal" data-backdrop="static" data-keyboard="false" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <h3 id="myModalLabel">Send Invitation</h3>
+	  </div>
+	  <div class="modal-body">
+	  		<section>Please review the invitation below carefully. You may not cancel an invitation once it has been submitted. If you wish to make any changes, click <b>"Edit"</b>. 
+	  			If you are ready to submit your invitation, click <b>"Send Invitation"</b>.<br/><br/>
+	  			Number of people to invite: <b>1</b>
+	  		</section><br/>
+	    	<div style="margin-top: 10px; padding: 8px 35px 8px 14px; margin-bottom: 10px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); background-color: #f2dede;  -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">		
+				
+				<th style="width: 800px">
+					<center>
+					<div style=" font-size: 25px; color: #b94a48; font-weight: bold;" >You have been invited to join this class!</div>
+					</center>
+				</th>
+			</div>
+			<div class="alert alert-success">	
+		  		
+		  			<b>From:</b> &nbsp; &nbsp; tecs moderator<br/>
+		  			<b>Subject:</b> Invitation to join the <b>II-Sampaguita</b><br/><br/>
+			  		This invitation expires in 30 days.<br/><br/>
+					<button style="margin-left: 89%" class="btn btn-success" >Join this Class</button>
+	  		</div>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-success" onClick="redirect()" >Send Invitation <i class="fui-check"></i></button>
+	    <button type="button" class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Edit <i class="fui-new"></i></button>
+	    <button class="btn btn-danger" onClick="redirect()" >Cancel <i class="fui-cross"></i></button>
+	  </div>
+	</div>
+
 	<div class="span8">
 		<div class="row-fluid">
 			<div class="span12 content">
@@ -12,42 +51,38 @@
 					<form class="form-horizontal">	
 						<fieldset>	
 								<div class="control-group">
-									<label class="control-label" for="className">Class Name</label>
-									<div class="controls">
-										<div class="span5">
-											<input type="text" placeholder="Required" class="span3" name="className" id="className" required />
-										</div>
-									</div>	
-								</div> 
-								<div class="control-group">
 									<label class="control-label" for="level">Year Level</label>
 									<div class="controls">
-										<div class="span5">
-											<input type="text" placeholder="Required" class="span3" name="level" id="level" required />
+										<div class="span7">
+											<input type="text" placeholder="Required" class="span4" name="level" id="level" required  />
 										</div>
 									</div>	
 								</div> 					
 								<div class="control-group">
 									<label class="control-label" for="className">Section</label>
 									<div class="controls">
-										<div class="span5">
-											<input type="text" placeholder="Required" class="span3" name="className" id="className" required />
+										<div class="span7">
+											<input type="text" placeholder="Required" class="span4" name="className" id="className" required />
 										</div>
 									</div>
 								</div> 
 								<div class="control-group">  
 									<label class="control-label" for="classKey">Student Email Address</label>  
 									<div class="controls">
-										<div id="add_more_div"></div>
-										<div class="span5">
-											<tr><input class="span1" style="color: #099" name="add_more[]" type="text" id="part0" placeholder="Required" required /></tr>				
-											<tr><button type="button" data-toggle="tooltip" data-placement="right" title="Add Student" onclick="add_more_text_box('add_more_div','add_more[]',child());" class="btn btn-primary mtm" ><i class="fui-plus"></i></button></tr>	
+										<div>
+											<p><em>Please enter one person per line. For example:</em></p>
+											<div style="padding-left: 25px">
+												<i>cheryleighverano@gmail.com<br/>master@yahoo.com</i>
+											</div>
+										</div><br/>
+										<div class="span7">
+											<textarea class="input-xlarge span4" id="q1" rows="2" placeholder="Emails"></textarea>
 										</div>
 									</div>
 							  	</div>		
 								<div class="form-actions">	
-									<button type="submit" class="btn btn-primary"><b>Save</b><i class="fui-check"></i></button> 
-									<button type="reset" class="btn btn-warning"><b>Reset</b><i class="fui-replay"></i></button> 
+									<a href="#myModal" role="button" data-toggle="modal" class="btn btn-primary"><b>Save</b><i class="fui-check"></i></a> 
+									<button type="reset" class="btn btn-warning"><b>Reset</b><i class="fui-play"></i></button> 
 									<a href="class.php" type="button" class="btn btn-danger"><b>Cancel</b>	<i class="fui-cross"></i></a>	
 								</div>	 
 						</fieldset>
@@ -58,70 +93,14 @@
 	</div>
 </div>
 
-<script>
-	function generateKey(parent_id)
-	{
-		var myField = document.getElementById(parent_id);
-		var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-		var string_length = 15;
-		var randomstring = '';
-		for (var i=0; i<string_length; i++) {
-			var rnum = Math.floor(Math.random() * chars.length);
-			randomstring += chars.substring(rnum,rnum+1);
-		}
-		myField.value=randomstring;
-	} 	
-</script>
+<script src="bootstrap/js/bootstrap-transition.js"></script>
+<script src="bootstrap/js/bootstrap-modal.js"></script>
+<script src="bootstrap/js/application.js"></script>
 
 <script>
-	function add_more_text_box(parent_id, child_name, child_id)
-	{
-	  var myTable = document.getElementById(parent_id);
-	  var oDiv, oInput, sss, del, min, oo;
-	  oDiv = document.createElement('div');
-	  sss = document.createElement('div');
-	  min = document.createElement('i');
-	  oo = document.createTextNode( "\u00A0" );
-	  oDiv.setAttribute('id', 'part'+ child_id);
-
-	  min.setAttribute('class', 'fui-plus');
-	  oDiv.setAttribute('class', 'control-group');
-	  sss.setAttribute('class', 'span5');
-	  myTable.appendChild(oDiv);
-
-	  //del.innerHTML = 'Element Number '+num+' has been added! <a href=\'#\' onclick=\'removeElement('+child_id+')\'>Remove the div "'+divIdName+'"</a>';
-	  del = document.createElement('input');
-	  del.setAttribute('type', 'button');
-	  del.setAttribute('class', 'btn btn-primary fui-plus removeVar');
-	  del.setAttribute('value', '-');
-
-	  oInput = document.createElement('input');
-	  oInput.setAttribute('type', 'text');
-	  oInput.setAttribute('style', 'color: #099');
-	  oInput.setAttribute('required', true);
-	  oInput.setAttribute('name', child_name);
-	  oInput.setAttribute('id', child_id);
-	  oInput.setAttribute('placeholder', 'Required');
-	  oInput.setAttribute('class', 'span3');
-	  sss.appendChild(oInput);
-	  del.appendChild(min);
-	  oDiv.appendChild(sss);
-	  oDiv.appendChild(oo);
-	  oDiv.appendChild(del);
-	} 
-	
-	var child_id = 1;
-	function child()
-	{ 
-		return child_id++;
-	}	
-
-	$(document).ready(function() 
-    { 
-		$('form').on('click', '.removeVar', function(){
-			$(this).parent().remove();
-		});
-    } );
+	function redirect () {
+		window.location = "class.php";
+	}
 </script>
 
 <?php include 'footer.php'; ?>
