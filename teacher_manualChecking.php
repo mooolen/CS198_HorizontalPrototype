@@ -27,12 +27,12 @@
 					
 				  <div class="demo-text-box prl">
 				   <h4><center><strong> Lorem Ipsum </strong></center> </h4>
-					<p>[1] Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. [2] Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. [3] Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-					<p>[4] Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. [5] Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. [6] Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. [7] Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-					<p>[8] Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-					<p>[9] Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. [10] Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p> Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 					
-				   <p>[11]Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+				   <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
 				  </div><!-- text box , di dapat ganito to, dapat may border and "tools"-->
 				</div>
 
@@ -69,7 +69,7 @@
 					  <div class="controls" id= "inputcomments" >
 						<div id="add_more_div"></div>
 					  	<table name="add_more[]">
-							<td><p class="span5">From Sentence Number</p></td>
+							<td><p class="span3">From Sentence Number</p></td>
 							<td><input type="text" class="span1" id="fromline" required></td>
 							<td><p class="span1"> to </p></td>
 							<td><input type="text" class="span1" id="toline" required> </td>
@@ -105,7 +105,7 @@
 	{
 	  var myTable = document.getElementById(parent_id);
 	  if( !num ){
-	  var oDiv, oInput, sss, onemore, ttt, uuu, del;
+	  var oDiv, op1, sss, oInp1, ttt, op2, uuu, oInp2, vvv, op3, www, oInp3, xxx, yyy, del;
 	  oDiv = document.createElement('table');
 	  sss = document.createElement('td');
 	  ttt = document.createElement('td');
@@ -118,31 +118,61 @@
 	  
 	  myTable.appendChild(oDiv);
 	
-	  oInput = document.createElement('input');
+	  op1 = document.createElement('p');
+	  oInp1 = document.createElement('input');
+	  op2 = document.createElement('p');
+	  oInp2 = document.createElement('input');
+	  op3 = document.createElement('p');
+	  oInp3 = document.createElement('input');
 	  del = document.createElement('button');
 	  del.setAttribute('type', 'button');
 	  del.setAttribute('class', 'btn btn-primary fui-cross removeVar');
 	  del.setAttribute('data-toggle', 'tooltip');
 	  del.setAttribute('data-placement', 'right');
 	  del.setAttribute('title', 'Remove Criterion');
-	  uuu.appendChild(del);
+	  yyy.appendChild(del);
 
-	  oInput.setAttribute('type', 'text');
-	  oInput.setAttribute('required', true);
-	  oInput.setAttribute('name', child_name);
-	  oInput.setAttribute('id', child_id);
-	  oInput.setAttribute('placeholder', 'Criterion');
-	  oInput.setAttribute('class', 'span3');
-	  sss.appendChild(oInput);
+	  op1. setAttribute('class', 'span3');
+	  op1. setAttribute('name', child_name);
+	  op1. setAttribute('id', child_id);
+	  op1.innerHTML = 'From Sentence Number';
+	  sss.appendChild(op1);
 
-	onemore = document.createElement('input');
-	onemore.setAttribute('type', 'text');
-	onemore.setAttribute('required', true);
-	onemore.setAttribute('name', child_name);
-	onemore.setAttribute('id', child_id);
-	onemore.setAttribute('class', 'span1');
-	onemore.setAttribute('placeholder', '%');
-	ttt.appendChild(onemore);
+	  oInp1. setAttribute('type', 'text');
+	  oInp1. setAttribute('required', true);
+	  oInp1. setAttribute('name', child_name);
+	  oInp1. setAttribute('id', child_id);
+	  oInp1. setAttribute('class', 'span1');
+	  ttt.appendChild(oInp1);
+
+	  op2. setAttribute('class', 'span1');
+	  op2. setAttribute('name', child_name);
+	  op2. setAttribute('id', child_id);
+	  op2.innerHTML = 'to';
+	  uuu.appendChild(op2);
+
+	  
+	  oInp2. setAttribute('type', 'text');
+	  oInp2. setAttribute('required', true);
+	  oInp2. setAttribute('name', child_name);
+	  oInp2. setAttribute('id', child_id);
+	  oInp2. setAttribute('class', 'span1');
+	  vvv.appendChild(oInp2);
+
+	  op3. setAttribute('class', 'span1');
+	  op3. setAttribute('name', child_name);
+	  op3. setAttribute('id', child_id);
+	  op3.innerHTML = ':';
+	  www.appendChild(op3);
+
+	  
+	  oInp3. setAttribute('type', 'text');
+	  oInp3. setAttribute('required', true);
+	  oInp3. setAttribute('placeholder', 'Comment');
+	  oInp3. setAttribute('name', child_name);
+	  oInp3. setAttribute('id', child_id);
+	  oInp3. setAttribute('class', 'span5');
+	  xxx.appendChild(oInp3);	  
 
 	oDiv.appendChild(sss);
 	oDiv.appendChild(ttt);
@@ -168,4 +198,5 @@
     } );
 
 </script>
+
 <?php include 'footer.php'; ?>
