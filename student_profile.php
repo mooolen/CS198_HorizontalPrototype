@@ -1,5 +1,9 @@
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php
+	$active_nav = 'DASHBOARD';
+	include 'student_header.php'; 
+	include 'student_sidebar.php';
+?>
+
 <body>
 <div class="page-content">
 	<div class="span8">
@@ -12,19 +16,19 @@
 						<div class="control-group">
 							<label class="control-label" for="email">Last Name</label>
 							<div class="controls">
-								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="Dimagiba" required /> 
+								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="Smith" required /> 
 							</div>
 						</div>
 						<div class="control-group">
 							<label class="control-label" for="email">First Name</label>
 							<div class="controls">
-								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="Elena" required /> 
+								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="john" required /> 
 							</div>
 						</div>
 						<div class="control-group">
 							<label class="control-label" for="email">Email Address</label>
 							<div class="controls">
-								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="elenadimagiba@gmail.com" required /> 
+								<input type="text" style="color: #099" placeholder="Required" class="span3" name="email" id="email" value="johnsmith@gmail.com" required /> 
 							</div>
 						</div>
 						<div class="control-group">
@@ -40,7 +44,7 @@
 							</div>	
 						</div>
 						<div class="form-actions">	
-							<a href="editProfile.php" type="button" class="btn btn-warning"><b>Edit Profile</b> <i class="fui-user"></i></a> 
+							<a href="student_editProfile.php" type="button" class="btn btn-warning"><b>Edit Profile</b> <i class="fui-user"></i></a> 
 							<a href="changePassword.php" type="button" class="btn btn-warning"><b>Change Password</b> <i class="fui-lock"></i></a>	
 						</div>	 
 					</fieldset>
