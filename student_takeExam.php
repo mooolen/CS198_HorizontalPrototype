@@ -11,7 +11,7 @@
 
     <link href="bootstrap/css/prettify.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <script src="bootstrap/js/jquery.min.js"></script>
 	<script src="bootstrap/js/jquery.hotkeys.js"></script>
@@ -59,9 +59,9 @@
 		}
 		
 		#myModal {    
-		    width: 70%;
+		    width: 50%;
 		    margin-left: -30%;
-		    left: 45%;
+		    left: 55%;
 		}
 	</style>
 
@@ -70,26 +70,22 @@
 
 <div class="page-content">
 	<div id="myModal" data-backdrop="static" data-keyboard="false" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-body">
-	  		<div class="login">
-		        <div class="login-screen">
+	  <div class="modal-body" style="background-color: rgb(241, 196, 15); ">
 		         <h3>Log-in to resume taking the exam.</h3>
 		          <div class="login-form">
 		            <div class="control-group">
-		              <input type="text" class="login-field" value="" placeholder="Enter your username" id="login-name" />
+		              <input type="text" class="login-field span4" value="" placeholder="Enter your username" id="login-name" />
 		              <label class="login-field-icon fui-user" for="login-name"></label>
 		            </div>
 
 		            <div class="control-group">
-		              <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" />
+		              <input type="password" class="login-field span4" value="" placeholder="Password" id="login-pass" />
 		              <label class="login-field-icon fui-lock" for="login-pass"></label>
 		            </div>
 
-		            <a class="btn btn-inverse btn-large btn-block" href="home.php">Login</a>
+		            <a class="btn btn-inverse btn-large btn-block" href="student_takeExam.php">Login</a>
 		            <a class="login-link" href="#">Forgot your password?</a>
 		          </div>
-		        </div>
-		      </div>
 		  </div>
 	</div>
 	<div class="span8">
@@ -199,8 +195,8 @@
                   
 				  
 				  <div class="form-actions">  
-					<button type="submit" onClick="confirmation()" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
-					<button type="reset" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
+					<button type="submit" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
+					<button type="button" onClick="confirmation()" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
 					<a href="#myModal" role="button" data-toggle="modal" class="btn btn-danger"><b>Lock</b><i class="fui-lock"></i></a>
 				  </div>   
 				</fieldset>
@@ -299,6 +295,9 @@ function wordcount(inputwords) {
 	    count();
 	});
 </script>
+
+<script src="bootstrap/js/bootstrap-transition.js"></script>
+
 <div id="fb-root"></div>
 
 </html>
