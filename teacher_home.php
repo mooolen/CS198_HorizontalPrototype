@@ -28,48 +28,48 @@
 								<td>My Summer Vacation</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 							 <tr>
 								<td>I - Opal</td>
 								<td>My Summer Vacation</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Constantine</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Zeus</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Wisdom</td>
 								<td>Ancient Civilization</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Hope</td>
 								<td>Ancient Civilization</td>
 								<td>July 15, 2013</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="#">View</a></center></td>
+								<td><center><a href="teacher_submissions.php">View</a></center></td>
 							</tr>
 						</tbody>
 					</table>
 					<hr>
 					<img class="title-icons" src="images/icons/Retina-Ready@2x.png">
-					<h3>Review Essay Score Results</h3>
+					<h3>Grade Essay</h3>
 					<table class="table table-striped">
 						<thead>
 							<tr>
@@ -84,37 +84,37 @@
 								<td>I - Amethyst</td>
 								<td>My Summer Vacation</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 							 <tr>
 								<td>I - Opal</td>
 								<td>My Summer Vacation</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Constantine</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 							<tr>
 								<td>II - Zeus</td>
 								<td>Status of Philippine Economy</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Wisdom</td>
 								<td>Ancient Civilization</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 							<tr>
 								<td>III - Hope</td>
 								<td>Ancient Civilization</td>
 								<td>July 19, 2013</td>
-								<td><center><a href="teacher_manualChecking.php">View</a></center></td>
+								<td><center><a href="teacher_manualChecking.php">Grade</a></center></td>
 							</tr>
 						</tbody>
 					</table>

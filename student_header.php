@@ -18,7 +18,7 @@
 			<div class="container">
 				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
 				<div class="nav-collapse collapse" id="nav-collapse-01">
-					<a class="brand" href="home.php">
+					<a class="brand" href="student_home.php">
 						<img class="brand-logo" src="images/icons/BookYellow@2x.png" /> TECS: Test Essay Content Software 
 					</a>
 					<ul class="nav pull-right">
@@ -33,7 +33,7 @@
 								<b class="caret"></b>
 							</a>
 							<ul>
-								<li><a href="profile.php">My Profile</a></li>
+								<li><a href="student_profile.php">My Profile</a></li>
 								<li><a href="#">My Account</a></li>
 								<li><a href="index.php">Logout</a></li>
 							</ul>
