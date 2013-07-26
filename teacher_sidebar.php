@@ -23,7 +23,7 @@
 					</a>
 				</li>
 				<li <?php if(isset($active_nav) && $active_nav == 'REPORTS') echo 'class="active"'?>>
-					<a href="teacher_addExam.php">
+					<a href="teacher_reports.php">
 						<div class="sidebar-icon fui-cmd"></div>
 						<div class="sidebar-content">REPORTS</div>
 					</a>

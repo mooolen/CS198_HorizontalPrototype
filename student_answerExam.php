@@ -11,7 +11,7 @@
 
     <link href="bootstrap/css/prettify.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <script src="bootstrap/js/jquery.min.js"></script>
 	<script src="bootstrap/js/jquery.hotkeys.js"></script>

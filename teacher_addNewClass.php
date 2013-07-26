@@ -84,7 +84,7 @@
 								<div class="form-actions">	
 									<a href="#myModal" role="button" data-toggle="modal" class="btn btn-primary"><b>Save</b><i class="fui-check"></i></a> 
 									<button type="reset" class="btn btn-warning"><b>Reset</b><i class="fui-play"></i></button> 
-									<a href="class.php" type="button" class="btn btn-danger"><b>Cancel</b>	<i class="fui-cross"></i></a>	
+									<a href="teacher_class.php" type="button" class="btn btn-danger"><b>Cancel</b>	<i class="fui-cross"></i></a>	
 								</div>	 
 						</fieldset>
 					</form>
@@ -100,7 +100,7 @@
 
 <script>
 	function redirect () {
-		window.location = "class.php";
+		window.location = "teacher_class.php";
 	}
 </script>
 
