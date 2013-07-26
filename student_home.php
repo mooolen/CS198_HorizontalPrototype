@@ -29,7 +29,7 @@
 								<td>July 19, 2013</td>
 								<td>1 hour</td>
 								<td>[Started] 31 mins left</td>
-								<td><center><a href="student_answerExam.php">Continue</a></center></td>
+								<td><center><a href="student_takeExam.php">Continue</a></center></td>
 							</tr>
 							 <tr>
 								<td>English</td>
@@ -38,7 +38,7 @@
 								<td>July 25, 2013</td>
 								<td>1 hour 30 minutes</td>
 								<td>Not yet started</td>
-								<td><center><a href="student_answerExam.php">Start</a></center></td>
+								<td><center><a href="student_takeExam.php">Start</a></center></td>
 							</tr>					
 						</tbody>
 					</table>
