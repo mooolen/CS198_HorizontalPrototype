@@ -199,8 +199,8 @@
                   
 				  
 				  <div class="form-actions">  
-					<button type="submit" onClick="confirmation()" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
-					<button type="reset" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
+					<button type="submit" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
+					<button type="button" onClick="confirmation()" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
 					<a href="#myModal" role="button" data-toggle="modal" class="btn btn-danger"><b>Lock</b><i class="fui-lock"></i></a>
 				  </div>   
 				</fieldset>
