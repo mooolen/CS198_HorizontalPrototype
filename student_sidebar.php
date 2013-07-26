@@ -16,7 +16,7 @@
 					</a>
 				</li>
 
-				<li <?php if(isset($active_nav) && $active_nav == 'EXAMS') echo 'class="active"'?>>
+				<li <?php if(isset($active_nav) && $active_nav == 'ESSAYS') echo 'class="active"'?>>
 					<a href="student_viewEssay.php">
 						<div class="sidebar-icon fui-eye"></div>
 						<div class="sidebar-content">ESSAYS</div>

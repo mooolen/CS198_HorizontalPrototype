@@ -1,5 +1,5 @@
 <?php
-	$active_nav = 'DASHBOARD';
+	$active_nav = 'ESSAYS';
 	include 'student_header.php'; 
 	include 'student_sidebar.php';
 ?>
