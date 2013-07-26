@@ -200,7 +200,7 @@
                   
 				  
 				  <div class="form-actions">  
-					<button type="submit" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
+					<button type="submit" onClick="confirmation()" class="btn btn-primary"><b>Save Draft</b> <i class="fui-new"></i></button> 
 					<button type="reset" class="btn btn-warning"><b>Submit</b> <i class="fui-check"></i></button> 
 					<a href="#myModal" role="button" data-toggle="modal" class="btn btn-danger"><b>Lock</b><i class="fui-lock"></i></a> 
 				  </div>   
@@ -212,6 +212,14 @@
 </div>
 
 </body>
+<script>
+	function confirmation(){
+		var r=confirm("Are you sure you want to submit? You can no longer edit your essay if you click 'OK'.");
+		if (r==true){
+		  x="You pressed OK!"; //go to home
+		}
+	}
+</script>
 
 <script type="text/javascript">
 $(function () {
