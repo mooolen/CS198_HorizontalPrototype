@@ -4,15 +4,14 @@
 	include 'teacher_sidebar.php';
 ?>	
 
-
+<script src="bootstrap/js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap-transition.js"></script>
 <script src="bootstrap/js/bootstrap-modal.js"></script>
 <script src="bootstrap/js/application.js"></script>
 
-<link href="bootstrap/css/datetimepicker.css" rel="stylesheet"></link>
+<link href="bootstrap/css/datepicker.css" rel="stylesheet"></link>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap-datepicker.min.js"></script>
+<script src="bootstrap/js/bootstrap-datepicker.js"></script>
 
 <div class="page-content">
 	<div class="span8">
@@ -59,6 +58,6 @@
 
 
 <script type="text/javascript">
-	 $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+	 $("#form_datetime").datepicker({format: 'yyyy-mm-dd hh:ii'});
 </script>
 <?php include 'footer.php'; ?>

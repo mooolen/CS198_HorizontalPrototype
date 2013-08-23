@@ -30,7 +30,7 @@
 			height: 45px; 			
 			position: absolute;
 			top: 5em;
-			right: 1.3em;
+			right: 14.3em;
 			z-index: 9999;
 			}
 		#editor {
@@ -83,7 +83,7 @@
 		              <label class="login-field-icon fui-lock" for="login-pass"></label>
 		            </div>
 
-		            <a class="btn btn-inverse btn-large btn-block" href="student_takeExam.php">Login</a>
+		            <a class="btn btn-inverse btn-large btn-block" data-dismiss="modal" aria-hidden="true" >Login</a>
 		            <a class="login-link" href="#">Forgot your password?</a>
 		          </div>
 		  </div>
