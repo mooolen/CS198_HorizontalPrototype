@@ -28,13 +28,13 @@
 								<td class="span1">
 									<div class="input-prepend span10">
 										<button type="submit" class="btn btn-primary">From</button>
-										<input type="text" class="span2 search-query form_datetime" readonly />
+										<input type="date" class="span2 search-query form_datetime" />
 									</div>
 								</td>
 								<td class="span1">
 									<div class="input-prepend span10">
 										<button type="submit" class="btn btn-primary">To</button>
-										<input type="text" class="span2 search-query form_datetime" readonly />
+										<input type="date" class="span2 search-query form_datetime" />
 									</div>
 								</td>
 								<td class="span2">
